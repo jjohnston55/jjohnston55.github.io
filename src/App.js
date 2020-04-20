@@ -23,11 +23,12 @@ const App = () => {
 	const [collapsed, setCollapsed] = useState(false);
 	const [pageContent, setPageContent] = useState(<Home />);
 
-	const { Header, Content, Footer, Sider } = Layout;
+	const { Content, Footer, Sider } = Layout;
 	const { SubMenu } = Menu;
 
+	const date = new Date();
+
 	const handleMenuClick = (evt) => {
-		console.log(evt);
 		switch (evt['key']) {
 			case '0':
 				console.log('Home');
@@ -53,7 +54,6 @@ const App = () => {
 	return (
 		<Layout style={{ minHeight: '100vh' }}>
 			<Sider collapsible collapsed={collapsed} onCollapse={setCollapsed} breakpoint='md'>
-				<div className='logo' />
 				<Menu theme='dark' defaultSelectedKeys={['0']} mode='inline' onClick={handleMenuClick}>
 					<Menu.Item key='0'>
 						<HomeOutlined />
@@ -93,13 +93,12 @@ const App = () => {
 				</Menu>
 			</Sider>
 			<Layout className='site-layout'>
-				<Header className='site-layout-header' style={{ padding: 0 }} />
 				<Content style={{ margin: '16px', height: '80vh' }}>
 					<div className='site-layout-content' style={{ padding: 24 }}>
 						{pageContent}
 					</div>
 				</Content>
-				<Footer style={{ textAlign: 'center' }}>Jeff Johnston</Footer>
+				<Footer style={{ textAlign: 'center' }}>Jeff Johnston &copy; {date.getFullYear()}</Footer>
 			</Layout>
 		</Layout>
 	);

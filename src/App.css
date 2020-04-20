@@ -1,14 +1,7 @@
-.logo {
-    height: 32px;
-    background: rgba(255, 255, 255, 0.2);
-    margin: 16px;
+.ant-layout-sider {
+    padding-top: 48px;    
 }
-
-.site-layout .site-layout-header {
-    background: #f0f2f5;
-}
-
 .site-layout .site-layout-content {
     background: #e5e8ea;
-    height: 84vh;
+    height: 100%;
 }
