@@ -25,7 +25,7 @@ const ProjectDisplay = (props) => {
                         liveLink 
                         ? <Tooltip title='View Live Version' placement='bottom'>
                             <a href={liveLink} target='_blank' rel="noopener noreferrer">
-                                <CloudTwoTone key="live" />
+                                <CloudTwoTone twoToneColor='#33a7f4' key="live" />
                             </a>
                         </Tooltip>
                         : <Tooltip title='No Live Version Available' placement='bottom'>
@@ -38,7 +38,7 @@ const ProjectDisplay = (props) => {
                             sourceLink
                             ? <Tooltip title='View Source Code' placement='bottom'>
                                 <a href={sourceLink} target='_blank' rel="noopener noreferrer">
-                                    <CodeTwoTone key="code" />
+                                    <CodeTwoTone twoToneColor='#33a7f4' key="code" />
                                 </a>
                             </Tooltip>
                             : <Tooltip title='Source Code Is Private' placement='bottom'>
@@ -59,15 +59,16 @@ const ProjectDisplay = (props) => {
                     <Col lg={12}>
                         <Row>
                             <Col lg={12}>
-                                blurb of what it is and how it works
+                                <h1>What It Is</h1>
+                                {/* blurb of what it is and how it works */}
                             </Col>
                             <Col lg={12}>
-                                tech used
+                                <h1>Tech Used</h1>
                             </Col>
                         </Row>
                         <Row>
                             <Col lg={24}>
-                                what I learned
+                                <h1>What I Learned</h1>
                             </Col>
                         </Row>
                     </Col>
