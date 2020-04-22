@@ -1,6 +1,6 @@
 .jumbotron {
-	height: 30vh;
 	border-bottom: 2px solid #939393;
+	margin-bottom: 20px;
 }
 
 .jumbotron h1 {
@@ -11,11 +11,13 @@
 	font-size: 32pt;
 }
 
+
+
 /* .path {
-	stroke-dasharray: 1000;
-	stroke-dashoffset: 1000;
+	stroke-dasharray: 100;
+	stroke-dashoffset: 100;
 	
-	animation: dash infinite 4s linear;
+	animation: dash 4s linear forwards;
 }
 
 @keyframes dash {

@@ -49,7 +49,7 @@ const App = () => {
 
 	return (
 		<Layout style={{ minHeight: '100vh' }}>
-			<Sider collapsible collapsed={collapsed} onCollapse={setCollapsed} breakpoint='md'>
+			<Sider className='site-layout-sider' collapsible collapsed={collapsed} onCollapse={setCollapsed} breakpoint='md'>
 				<Row justify='center' align='middle'>
 					<Col className='icon ant-menu-item'>
 						<img height='48px' src={logo} alt='logo' />
@@ -96,12 +96,12 @@ const App = () => {
 				</Menu>
 			</Sider>
 			<Layout className='site-layout'>
-				<Content style={{ margin: '16px', height: '80vh' }}>
+				<Content style={{ margin: '16px', minHeight: '80vh' }}>
 					<div className='site-layout-content' style={{ padding: 24 }}>
 						{pageContent}
 					</div>
 				</Content>
-				<Footer style={{ textAlign: 'center' }}>Jeff Johnston &copy; {date.getFullYear()}</Footer>
+				<Footer style={{ textAlign: 'center' }}>Jeff Johnston - {date.getFullYear()}</Footer>
 			</Layout>
 		</Layout>
 	);

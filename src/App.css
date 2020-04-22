@@ -10,7 +10,17 @@
     font-size: large;
 }
 
+.site-layout {
+    position: relative;
+}
+
 .site-layout .site-layout-content {
     background: #e5e8ea;
     height: 100%;
+}
+
+.site-layout-sider {
+    height: '100vh';
+    position: 'fixed';
+    left: 0;
 }

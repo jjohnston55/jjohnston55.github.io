@@ -5,6 +5,7 @@ import { CloudOutlined, CodeOutlined, EllipsisOutlined
 
 const ProjectDisplay = (props) => {
     const title = props.title;
+    const cover = props.cover;
     const liveLink = props.liveLink;
     const sourceLink = props.sourceLink;
     const previewText = props.previewText;
@@ -16,7 +17,8 @@ const ProjectDisplay = (props) => {
 
     return (
         <>
-            <Card title={title} hoverable 
+            <Card hoverable
+                cover={<img alt='cover' height='300px' src={cover}/>} 
                 actions={[
                     <Tooltip title='View Live Version' placement='bottomLeft'>
                         <a href={liveLink} target='_blank' rel="noopener noreferrer">
@@ -33,13 +35,13 @@ const ProjectDisplay = (props) => {
                     </Tooltip>,
                 ]}
             >
-                {previewText}
+                <Card.Meta title={title} description={previewText} />
             </Card>
 
             <Modal title={title} visible={show} onCancel={handleClose} width='65vw' footer={null}>
                 <Row>
                     <Col lg={12}>
-                        <img src='' alt='Gif of project' />
+                        <img src={cover} alt='Gif of project' />
                     </Col>
                     <Col lg={12}>
                         <Row>
