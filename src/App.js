@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Layout, Menu } from 'antd';
+import { Layout, Menu, Row, Col } from 'antd';
 import { ContactsOutlined,
 	GithubOutlined,
 	HomeOutlined,
@@ -11,7 +11,7 @@ import { ContactsOutlined,
 } from '@ant-design/icons'
 import 'antd/dist/antd.css';
 import './App.css';
-
+import logo from './img/logo.png';
 
 import About from './pages/about';
 import Home from './pages/home';
@@ -20,7 +20,7 @@ import Resume from './pages/resume';
 
 const App = () => {
 
-	const [collapsed, setCollapsed] = useState(false);
+	const [collapsed, setCollapsed] = useState(true);
 	const [pageContent, setPageContent] = useState(<Home />);
 
 	const { Content, Footer, Sider } = Layout;
@@ -31,19 +31,15 @@ const App = () => {
 	const handleMenuClick = (evt) => {
 		switch (evt['key']) {
 			case '0':
-				console.log('Home');
 				setPageContent(<Home />);
 				break;
 			case '1':
-				console.log('Projects');
 				setPageContent(<Projects />);
 				break;
 			case '2':
-				console.log('About');
 				setPageContent(<About />);
 				break;
 			case '3':
-				console.log('Resume');
 				setPageContent(<Resume />);
 				break;
 			default:
@@ -54,6 +50,13 @@ const App = () => {
 	return (
 		<Layout style={{ minHeight: '100vh' }}>
 			<Sider collapsible collapsed={collapsed} onCollapse={setCollapsed} breakpoint='md'>
+				<Row justify='center' align='middle'>
+					<Col className='icon ant-menu-item'>
+						<img height='48px' src={logo} alt='logo' />
+						{!collapsed && 
+						<span className='icon-text'>Jeff Johnston</span>}
+					</Col>
+				</Row>
 				<Menu theme='dark' defaultSelectedKeys={['0']} mode='inline' onClick={handleMenuClick}>
 					<Menu.Item key='0'>
 						<HomeOutlined />
