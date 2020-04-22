@@ -21,31 +21,16 @@ import Resume from './pages/resume';
 const App = () => {
 
 	const [collapsed, setCollapsed] = useState(true);
-	const [pageContent, setPageContent] = useState(<Home />);
+	const [pageContent, setPageContent] = useState('0');
 
 	const { Content, Footer, Sider } = Layout;
 	const { SubMenu } = Menu;
 
 	const date = new Date();
 
-	const handleMenuClick = (evt) => {
-		switch (evt['key']) {
-			case '0':
-				setPageContent(<Home />);
-				break;
-			case '1':
-				setPageContent(<Projects />);
-				break;
-			case '2':
-				setPageContent(<About />);
-				break;
-			case '3':
-				setPageContent(<Resume />);
-				break;
-			default:
-				break;
-		}
-	}
+	const changeView = (evt) => {
+		setPageContent(evt);
+	};
 
 	return (
 		<Layout style={{ minHeight: '100vh' }}>
@@ -57,7 +42,7 @@ const App = () => {
 						<span className='icon-text'>Jeff Johnston</span>}
 					</Col>
 				</Row>
-				<Menu theme='dark' defaultSelectedKeys={['0']} mode='inline' onClick={handleMenuClick}>
+				<Menu theme='dark' defaultSelectedKeys='0' selectedKeys={pageContent} mode='inline' onClick={(evt) => setPageContent(evt['key'])}>
 					<Menu.Item key='0'>
 						<HomeOutlined />
 						<span>Home</span>
@@ -98,7 +83,10 @@ const App = () => {
 			<Layout className='site-layout'>
 				<Content style={{ margin: '16px', minHeight: '80vh' }}>
 					<div className='site-layout-content' style={{ padding: 24 }}>
-						{pageContent}
+						{pageContent == '0' && <Home view={changeView} />}
+						{pageContent == '1' && <Projects />}
+						{pageContent == '2' && <About />}
+						{pageContent == '3' && <Resume />}
 					</div>
 				</Content>
 				<Footer style={{ textAlign: 'center' }}>Jeff Johnston - {date.getFullYear()}</Footer>

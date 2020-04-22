@@ -1,81 +1,85 @@
 import React from 'react';
-import { Row, Col, Card, List, Avatar } from 'antd';
-import { LaptopOutlined, ShareAltOutlined, RocketOutlined } from '@ant-design/icons';
+import { Row, Col, Card, List, Avatar, Button } from 'antd';
+import { LaptopOutlined, DatabaseOutlined, RocketOutlined } from '@ant-design/icons';
 import './index.css';
 
-const Home = () => {
+const Home = (props) => {
+	const view = props.view;
 
 	const path = 'm 26 3 h 14 v 29 a -1 -1 0 0 1 -32 0 v -4 h 12 v 3 a 1 1 0 0 0 8 0 v -22 h 6 v 23 a 1 1 0 0 1 -20 0';
-	const data = [
+	const frontEndData = [
 		{
-			icon: <LaptopOutlined />,
-			title: 'Front End',
-			items: [
-				{
-					title: 'HTML',
-				},
-				{
-					title: 'CSS',
-				},
-				{
-					title: 'Javascript',
-				},
-				{
-					title: 'React',
-				},
-			]
+			title: 'HTML',
 		},
 		{
-			icon: <ShareAltOutlined />,
-			title: 'Server',
-			items: [
-				{
-					title: 'C#',
-				},
-				{
-					title: 'ASP.Net',
-				},
-			]
+			title: 'CSS',
 		},
 		{
-			icon: <RocketOutlined />,
-			title: 'Technologies',
-			items: [
-				{
-					title: 'Content',
-				},
-			]
+			title: 'Javascript',
+		},
+		{
+			title: 'React',
 		},
 	];
+	const backEndData = [
+		{
+			title: 'C#',
+		},
+		{
+			title: 'ASP.Net Web API',
+		},
+	];
+	const techData = [
+		{
+			title: 'Content',
+		},
+	];
+
+	const handleResume = () => view('3');
+	const handleProjects = () => view('1');
 
 	return (
 		<>
 			<Row className='jumbotron' align='middle' gutter={16}>
-				<Col flex={2}>
+				<Col flex={1}>
 					<h1>Jeff Johnston</h1>
 					<h3>Full Stack Developer</h3>
+					<Button onClick={handleResume}>View Resume</Button>
+					<Button onClick={handleProjects}>View Projects</Button>
 				</Col>
-				<Col flex={3}>
+				<Col flex={1}>
 					<svg viewBox='0 0 50 50'>
 						<path className='path' d={path} />
 					</svg>
 				</Col>
 			</Row>
 			<Row>
-				<Col span={24}>
-				<List grid={{ gutter: 16, column: 3}} dataSource={data} 
-					renderItem={focus => (
-						<List.Item>
-							<Card title={<Row><Col span={4}>{focus.icon}</Col> <Col span={20}>{focus.title}</Col></Row>}>
-								<List itemLayout='horizontal' dataSource={focus.items} renderItem={item => (
-									<List.Item>
-										<List.Item.Meta avatar={<Avatar size='small' shape='square'>J</Avatar>} title={item.title}/>
-									</List.Item>
-								)}/>
-							</Card>
-						</List.Item>
-					)}
-				/>
+				<Col span={4} offset={5}>
+					<Card title={<><LaptopOutlined /> <>Front End</></>}>
+						<List itemLayout='horizontal' dataSource={frontEndData} renderItem={item => (
+							<List.Item>
+								<List.Item.Meta avatar={<Avatar size='small' shape='square'>{item.title[0]}</Avatar>} title={item.title}/>
+							</List.Item>
+						)}/>
+					</Card>
+				</Col>
+				<Col span={4} offset={1}>
+					<Card title={<><DatabaseOutlined /> <>Back End</></>}>
+						<List itemLayout='horizontal' dataSource={backEndData} renderItem={item => (
+							<List.Item>
+								<List.Item.Meta avatar={<Avatar size='small' shape='square'>{item.title[0]}</Avatar>} title={item.title}/>
+							</List.Item>
+						)}/>
+					</Card>
+				</Col>
+				<Col span={4} offset={1}>
+					<Card title={<><RocketOutlined /> <>Technologies</></>}>
+						<List itemLayout='horizontal' dataSource={techData} renderItem={item => (
+							<List.Item>
+								<List.Item.Meta avatar={<Avatar size='small' shape='square'>{item.title[0]}</Avatar>} title={item.title}/>
+							</List.Item>
+						)}/>
+					</Card>
 				</Col>
 			</Row>
 		</>
