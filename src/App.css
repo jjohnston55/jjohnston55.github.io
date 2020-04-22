@@ -11,7 +11,9 @@
 }
 
 .site-layout {
-    position: relative;
+    /* position: ; */
+    /* left: 1; */
+    /* margin-left: 200px; */
 }
 
 .site-layout .site-layout-content {
@@ -20,7 +22,7 @@
 }
 
 .site-layout-sider {
-    height: '100vh';
-    position: 'fixed';
-    left: 0;
+    /* height: 100vh;
+    position: fixed;
+    left: 0; */
 }

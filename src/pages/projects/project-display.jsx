@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Card, Modal, Tooltip, Row, Col } from 'antd';
-import { CloudOutlined, CodeOutlined, EllipsisOutlined
+import { CloudFilled, CloudTwoTone, CodeFilled, CodeTwoTone
 } from '@ant-design/icons';
 
 const ProjectDisplay = (props) => {
@@ -17,25 +17,38 @@ const ProjectDisplay = (props) => {
 
     return (
         <>
-            <Card hoverable
-                cover={<img alt='cover' height='300px' src={cover}/>} 
+            <Card hoverable //onClick={handleShow}
+                cover={<img onClick={handleShow} alt='cover' height='250vmin' src={cover}/>} 
                 actions={[
-                    <Tooltip title='View Live Version' placement='bottomLeft'>
-                        <a href={liveLink} target='_blank' rel="noopener noreferrer">
-                            <CloudOutlined key="live" />
-                        </a>
-                    </Tooltip>,
-                    <Tooltip title='View Source Code' placement='bottom'>
-                        <a href={sourceLink} target='_blank' rel="noopener noreferrer">
-                            <CodeOutlined key="code" />
-                        </a>
-                    </Tooltip>,
-                    <Tooltip title='View Details' placement='bottomRight' onClick={handleShow}>
-                        <EllipsisOutlined key='show' />
-                    </Tooltip>,
+                    <>
+                    {
+                        liveLink 
+                        ? <Tooltip title='View Live Version' placement='bottom'>
+                            <a href={liveLink} target='_blank' rel="noopener noreferrer">
+                                <CloudTwoTone key="live" />
+                            </a>
+                        </Tooltip>
+                        : <Tooltip title='No Live Version Available' placement='bottom'>
+                            <CloudFilled key='notLive'/>
+                        </Tooltip>
+                    }
+                    </>,
+                    <>
+                        {
+                            sourceLink
+                            ? <Tooltip title='View Source Code' placement='bottom'>
+                                <a href={sourceLink} target='_blank' rel="noopener noreferrer">
+                                    <CodeTwoTone key="code" />
+                                </a>
+                            </Tooltip>
+                            : <Tooltip title='Source Code Is Private' placement='bottom'>
+                                <CodeFilled key='noSourceCode' />
+                            </Tooltip>
+                        }
+                    </>
                 ]}
             >
-                <Card.Meta title={title} description={previewText} />
+                <Card.Meta onClick={handleShow} title={title} description={previewText} />
             </Card>
 
             <Modal title={title} visible={show} onCancel={handleClose} width='65vw' footer={null}>
