@@ -44,8 +44,14 @@ const Home = (props) => {
 				<Col flex={1}>
 					<h1>Jeff Johnston</h1>
 					<h3>Full Stack Developer</h3>
-					<Button onClick={handleResume}>View Resume</Button>
-					<Button onClick={handleProjects}>View Projects</Button>
+					<Row>
+					<Col offset={4} span={4}>
+						<Button shape='round' size='large' type='primary' onClick={handleResume}>View Resume</Button>
+					</Col>
+					<Col span={4}>
+						<Button shape='round' size='large' type='primary' onClick={handleProjects}>View Projects</Button>
+					</Col>
+					</Row>
 				</Col>
 				<Col flex={1}>
 					<svg viewBox='0 0 50 50'>

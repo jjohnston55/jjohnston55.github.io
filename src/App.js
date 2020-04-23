@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Layout, Menu, Row, Col } from 'antd';
+import { Layout, Menu, Row, Col, BackTop } from 'antd';
 import { ContactsOutlined,
 	GithubOutlined,
 	HomeOutlined,
@@ -11,7 +11,7 @@ import { ContactsOutlined,
 } from '@ant-design/icons'
 import 'antd/dist/antd.css';
 import './App.css';
-import logo from './img/logo.png';
+import logo from './resources/logo.png';
 
 import About from './pages/about';
 import Home from './pages/home';
@@ -23,7 +23,7 @@ const App = () => {
 	const [collapsed, setCollapsed] = useState(true);
 	const [pageContent, setPageContent] = useState('0');
 
-	const { Content, Footer, Sider } = Layout;
+	const { Header, Content, Footer, Sider } = Layout;
 	const { SubMenu } = Menu;
 
 	const date = new Date();
@@ -33,16 +33,10 @@ const App = () => {
 	};
 
 	return (
-		<Layout style={{ minHeight: '100vh' }}>
-			<Sider className='site-layout-sider' collapsible collapsed={collapsed} onCollapse={setCollapsed} breakpoint='md'>
-				<Row justify='center' align='middle'>
-					<Col className='icon ant-menu-item'>
-						<img height='48px' src={logo} alt='logo' />
-						{!collapsed && 
-						<span className='icon-text'>Jeff Johnston</span>}
-					</Col>
-				</Row>
-				<Menu theme='dark' defaultSelectedKeys='0' selectedKeys={pageContent} mode='inline' onClick={(evt) => setPageContent(evt['key'])}>
+		<Layout >
+			<Layout className='site-layout'>
+				<Header>
+				<Menu theme='dark' defaultSelectedKeys='0' selectedKeys={pageContent} mode='horizontal' onClick={(evt) => setPageContent(evt['key'])}>
 					<Menu.Item key='0'>
 						<HomeOutlined />
 						<span>Home</span>
@@ -79,14 +73,14 @@ const App = () => {
 						</Menu.Item>
 					</SubMenu>
 				</Menu>
-			</Sider>
-			<Layout className='site-layout'>
+				</Header>
 				<Content style={{ margin: '16px', minHeight: '80vh' }}>
 					<div className='site-layout-content' style={{ padding: 24 }}>
-						{pageContent == '0' && <Home view={changeView} />}
-						{pageContent == '1' && <Projects />}
-						{pageContent == '2' && <About />}
-						{pageContent == '3' && <Resume />}
+						<BackTop />
+						<Home view={changeView} />
+						<Projects />
+						<About />
+						<Resume />
 					</div>
 				</Content>
 				<Footer style={{ textAlign: 'center' }}>Jeff Johnston - {date.getFullYear()}</Footer>
