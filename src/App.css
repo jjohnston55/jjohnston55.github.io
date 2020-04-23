@@ -1,28 +1,5 @@
-.icon {
-    background-color: #001529;
-    cursor: default;
-    padding: 0;
-    pointer-events: none;
-}
-
-.icon-text {
-    color: rgba(255, 255, 255, 0.65);
-    font-size: large;
-}
-
-.site-layout {
-    /* position: ; */
-    /* left: 1; */
-    /* margin-left: 200px; */
-}
-
-.site-layout .site-layout-content {
-    background: #e5e8ea;
-    height: 100%;
-}
-
-.site-layout-sider {
-    /* height: 100vh;
-    position: fixed;
-    left: 0; */
+button.ant-btn, button.ant-btn:active, button.ant-btn:focus {
+    background-color: #1f92df;
+    border: none;
+    outline: none;
 }

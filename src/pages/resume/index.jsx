@@ -8,7 +8,7 @@ const Resume = () => {
         <>
             <h1>Resume</h1>
             <Button icon={<DownloadOutlined />} shape='round' size='large' type='primary'>
-                <a download="jeff-johnston-resume">Download Resume</a>
+                {/* <a href='' download="jeff-johnston-resume">Download Resume</a> */}
             </Button>
         </>
     )
