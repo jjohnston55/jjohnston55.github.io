@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Button } from 'antd';
+import { Row, Col, Button, Select } from 'antd';
 import './index.css';
 
 const Home = (props) => {
@@ -8,24 +8,30 @@ const Home = (props) => {
 	
 	return (
 		<>
+			<Select placeholder='Hey'>
+				<Select.Option>Hey</Select.Option>
+			</Select>
 			<Row className='jumbotron' align='middle'>
-				<Col offset={2} span={10}>
+				<Col span={24}>
 					<h1>Jeff Johnston</h1>
 					<h3>Full Stack Developer</h3>
-					<Row>
-						<Col offset={6} span={4}>
+					<Row className='buttons'>
+						<Col offset={10} span={2}>
 							<Button type='primary'>View Resume</Button>
 						</Col>
-						<Col span={4}>
+						<Col offset={1} span={2}>
 							<Button type='primary'>View Projects</Button>
 						</Col>
 					</Row>
 				</Col>
-				<Col offset={3} span={6}>
+				{/* <Col className='logo' offset={10} span={12}> */}
+				{/* </Col> */}
+				<div className='logo'>
+
 					<svg viewBox='0 0 50 50'>
 						<path className='path' d={path} />
 					</svg>
-				</Col>
+				</div>
 			</Row>
 			<div className='go-down'>
 				V

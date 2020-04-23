@@ -3,21 +3,33 @@
 	background-attachment: fixed;
 	height: 100vh;
 	margin-bottom: 4vw;
-	outline: white solid 1vw;
+	outline: #EAF2E3 solid 1vw;
 	outline-offset: -3vw;
+	/* margin-top: 2vh; */
+}
+.ant-select, .ant-select-selector, .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+	background-color: #FAFF81;
+	color: black;
+	width: 99vw;
+	border-radius: 3px;
 }
 
 .jumbotron h1 {
-	color: #f0f0f0;
+	color: #EAF2E3;
+	text-align: center;
 	font-size: 5em;
-	padding-left: 5vw;
+	width: 100vw;
+	/* padding-left: 5vw; */
 	margin-bottom: 0px;
 }
 
 .jumbotron h3 {
-	color: #f0f0f0;
+	width: 100vw;
+	text-align: center;
+	color: #EAF2E3;
 	font-size: 3em;
-	padding-left: 10vw;
+	margin-bottom: 250px;
+	/* padding-left: 10vw; */
 }
 
 .go-down {
@@ -29,7 +41,7 @@
 
 	background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
 	background-size: 150px;
-	color: gray;
+	color: EAF2E3;
 	background-clip: text;
 	animation-name: shine;
 	animation-duration: 3s;
@@ -37,9 +49,18 @@
 	text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
 }
 
+.logo {
+	position: absolute;
+	left: 50vw;
+	top: 245px;
+	width: 30vw;
+	height: 30vh;
+}
 
 path.path {
 	fill: none;
+	stroke: rgba(251, 255, 129, 0.404);
+	stroke-width: 1;
 	stroke-dasharray: 210;
 	stroke-linejoin: round;
 	stroke-dashoffset: 210;
@@ -52,8 +73,8 @@ path.path {
 		stroke-width: 1;
 	}
 	to {
-		stroke: #d8d27b;
-		stroke-width: 3;
+		stroke: rgb(166, 247, 220);
+		stroke-width: 1;
 		stroke-dashoffset: 0;
 	}
 }

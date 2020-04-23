@@ -1,5 +1,6 @@
 button.ant-btn, button.ant-btn:active, button.ant-btn:focus {
-    background-color: #1f92df;
+    background-color: #faff81;
+    color: black;
     border: none;
     outline: none;
 }
