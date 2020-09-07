@@ -1,34 +1,79 @@
 import React from 'react';
-import { Row, Col, Button } from 'antd';
+import { Row, Col, Button, Tooltip } from 'antd';
+import { GithubOutlined,
+	LinkedinOutlined,
+	MailOutlined,
+	PaperClipOutlined,
+	PartitionOutlined
+} from '@ant-design/icons'
 import './index.css';
 
 const Home = (props) => {
 
 	const path = 'm 26 3 h 14 v 29 a -1 -1 0 0 1 -32 0 v -4 h 12 v 3 a 1 1 0 0 0 8 0 v -22 h 6 v 23 a 1 1 0 0 1 -20 0';
+
+	const handleDown = () => {
+		document.getElementById('content').scrollIntoView({behavior: 'smooth'});
+	}
+	
+	const resumeClick = () => {
+		document.getElementById('resume').scrollIntoView({behavior: 'smooth'});
+	}
+
+	const projectClick = () => {
+		document.getElementById('projects').scrollIntoView({behavior: 'smooth'});
+	}
 	
 	return (
 		<>
-			<Row className='jumbotron' align='middle'>
-				<Col offset={2} span={10}>
+			<Row className='jumbotron' justify='center' align='middle'>
+				<Col span={8}>
 					<h1>Jeff Johnston</h1>
 					<h3>Full Stack Developer</h3>
-					<Row>
-						<Col offset={6} span={4}>
-							<Button type='primary'>View Resume</Button>
+					<Row justify='space-around'>
+						<Col>
+							<Tooltip title='View Resume' placement='bottom'>
+								<Button type='primary' icon={<PaperClipOutlined />} onClick={resumeClick} />
+							</Tooltip>
 						</Col>
-						<Col span={4}>
-							<Button type='primary'>View Projects</Button>
+						<Col>
+							<Tooltip title='View Projects' placement='bottom'>
+								<Button type='primary' icon={<PartitionOutlined />} onClick={projectClick} />
+							</Tooltip>
+						</Col>
+						<Col>
+							<Tooltip title='View LinkedIn' placement='bottom'>
+								<a href='https://linkedin.com/in/jeff-johnston-software-developer' target='_blank' rel='noreferrer noopener'>
+									<Button type='primary' icon={<LinkedinOutlined />} />
+								</a>
+							</Tooltip>
+						</Col>
+						<Col>
+							<Tooltip title='View Github' placement='bottom'>
+								<a href='https://github.com/jjohnston55' target='_blank' rel='noreferrer noopener'>
+									<Button type='primary' icon={<GithubOutlined />} />
+								</a>
+							</Tooltip>
+						</Col>
+						<Col>
+							<Tooltip title='jeffjohnst98@gmail.com' placement='bottom'>
+								<a href='mailto:jeffjohnst98@gmail.com'>
+									<Button type='primary' icon={<MailOutlined />} />
+								</a>
+							</Tooltip>
 						</Col>
 					</Row>
 				</Col>
-				<Col offset={3} span={6}>
-					<svg viewBox='0 0 50 50'>
+				<Col span={8}>
+					<svg class='logo' viewBox='0 0 50 50'>
 						<path className='path' d={path} />
 					</svg>
 				</Col>
 			</Row>
-			<div className='go-down'>
-				V
+			<div className='go-down' onClick={handleDown}>
+				<svg viewBox="0 0 100 100">
+					<path d="m 10 10 l 40 40 l 40 -40 l 0 40 l -40 40 l -40 -40"/>
+				</svg>
 			</div>
 		</>
 	)
