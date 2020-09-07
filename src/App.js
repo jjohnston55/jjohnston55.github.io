@@ -1,5 +1,5 @@
 import React from 'react';
-import { BackTop, Anchor } from 'antd';
+import { BackTop } from 'antd';
 // import { ContactsOutlined,
 // 	GithubOutlined,
 // 	HomeOutlined,
@@ -14,7 +14,6 @@ import './App.css';
 
 import About from './pages/about';
 import Home from './pages/home';
-import Skills from './pages/skills';
 import Projects from './pages/projects';
 import Resume from './pages/resume';
 
@@ -61,18 +60,14 @@ const App = () => {
 		// 		</Menu>
 		<>
 		 	<div className='banner'>
-				<Anchor>
-					{/* <Link title="" /> */}
-				</Anchor>
 				<BackTop visibilityHeight='900' />
 				<Home />
 			</div>
-			<div className='content' style={{ padding: '2vw' }}>
+			<div id='content' className='content'>
 				<About />
-				<Skills />
 				<Projects />
 				<Resume />
-				<footer>Jeff Johonston - {date.getFullYear()}</footer>
+				<footer>Jeff Johnston - {date.getFullYear()}<br/>https://coolors.co/ee6352-59cd90-23c9ff-d8d27b-ffffff</footer>
 			</div>
 		</>
 	);

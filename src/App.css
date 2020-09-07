@@ -1,5 +1,18 @@
 button.ant-btn, button.ant-btn:active, button.ant-btn:focus {
-    background-color: #1f92df;
+    background-color: #0f325a36;
     border: none;
     outline: none;
+}
+button.ant-btn:hover {
+    background-color: #0f325a99;
+}
+.content {
+    padding: 6vw;
+}
+
+footer {
+    padding-top: 2vw;
+    /*background-color: #23C9FF;
+    color: #ffffff;
+    font-size: 1.5rem; */
 }
