@@ -17,6 +17,12 @@ const Skills = () => {
 		{
 			title: 'React',
 		},
+		{
+			title: 'Bootstrap',
+		},
+		{
+			title: 'Ant Design',
+		},
 	];
 	const backEndData = [
 		{
@@ -28,13 +34,13 @@ const Skills = () => {
 	];
 	const techData = [
 		{
-			title: 'Content',
+			title: 'Git',
 		},
 	];
 
     return (        
-        <Row>
-            <Col span={4} offset={5}>
+        <Row justify='space-between'>
+            <Col>
                 <Card title={<><LaptopOutlined /> <>Front End</></>}>
                     <List itemLayout='horizontal' dataSource={frontEndData} renderItem={item => (
                         <List.Item>
@@ -43,7 +49,7 @@ const Skills = () => {
                     )}/>
                 </Card>
             </Col>
-            <Col span={4} offset={1}>
+            <Col>
                 <Card title={<><DatabaseOutlined /> <>Back End</></>}>
                     <List itemLayout='horizontal' dataSource={backEndData} renderItem={item => (
                         <List.Item>
@@ -52,7 +58,7 @@ const Skills = () => {
                     )}/>
                 </Card>
             </Col>
-            <Col span={4} offset={1}>
+            <Col>
                 <Card title={<><RocketOutlined /> <>Technologies</></>}>
                     <List itemLayout='horizontal' dataSource={techData} renderItem={item => (
                         <List.Item>
