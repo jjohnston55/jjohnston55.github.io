@@ -60,14 +60,16 @@ const App = () => {
 		// 		</Menu>
 		<>
 		 	<div className='banner'>
-				<BackTop visibilityHeight='900' />
+				<BackTop visibilityHeight={document.documentElement.clientHeight} />
 				<Home />
 			</div>
 			<div id='content' className='content'>
 				<About />
 				<Projects />
 				<Resume />
-				<footer>Jeff Johnston - {date.getFullYear()}<br/>https://coolors.co/ee6352-59cd90-23c9ff-d8d27b-ffffff</footer>
+				<footer>Jeff Johnston - {date.getFullYear()}
+				{/* <br/>https://coolors.co/ee6352-59cd90-23c9ff-d8d27b-ffffff */}
+				</footer>
 			</div>
 		</>
 	);

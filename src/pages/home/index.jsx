@@ -65,7 +65,7 @@ const Home = (props) => {
 					</Row>
 				</Col>
 				<Col span={8}>
-					<svg class='logo' viewBox='0 0 50 50'>
+					<svg className='logo' viewBox='0 0 50 50'>
 						<path className='path' d={path} />
 					</svg>
 				</Col>
