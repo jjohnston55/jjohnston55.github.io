@@ -17,8 +17,8 @@ const ProjectDisplay = (props) => {
 
     return (
         <>
-            <Card hoverable //onClick={handleShow}
-                cover={<img onClick={handleShow} alt='cover' height='250vmin' src={cover}/>} 
+            <Card hoverable
+                cover={<img onClick={handleShow} alt='cover' height='250vmin' width='250vmin' src={cover}/>} 
                 actions={[
                     <>
                     {
