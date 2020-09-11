@@ -6,23 +6,14 @@ const Skills = () => {
 
     const frontEndData = [
 		{
-			title: 'HTML',
-		},
-		{
-			title: 'CSS',
+			title: 'HTML | CSS',
 		},
 		{
 			title: 'Javascript',
 		},
 		{
-			title: 'React',
-		},
-		{
-			title: 'Bootstrap',
-		},
-		{
-			title: 'Ant Design',
-		},
+			title: 'React | Redux',
+		}
 	];
 	const backEndData = [
 		{
@@ -39,10 +30,10 @@ const Skills = () => {
 	];
 
     return (        
-        <Row justify='space-between'>
+        <Row justify='space-around'>
             <Col>
                 <Card title={<><LaptopOutlined /> <>Front End</></>}>
-                    <List itemLayout='horizontal' dataSource={frontEndData} renderItem={item => (
+                    <List dataSource={frontEndData} renderItem={item => (
                         <List.Item>
                             <List.Item.Meta avatar={<Avatar size='small' shape='square'>{item.title[0]}</Avatar>} title={item.title}/>
                         </List.Item>
@@ -51,7 +42,7 @@ const Skills = () => {
             </Col>
             <Col>
                 <Card title={<><DatabaseOutlined /> <>Back End</></>}>
-                    <List itemLayout='horizontal' dataSource={backEndData} renderItem={item => (
+                    <List dataSource={backEndData} renderItem={item => (
                         <List.Item>
                             <List.Item.Meta avatar={<Avatar size='small' shape='square'>{item.title[0]}</Avatar>} title={item.title}/>
                         </List.Item>
@@ -60,7 +51,7 @@ const Skills = () => {
             </Col>
             <Col>
                 <Card title={<><RocketOutlined /> <>Technologies</></>}>
-                    <List itemLayout='horizontal' dataSource={techData} renderItem={item => (
+                    <List dataSource={techData} renderItem={item => (
                         <List.Item>
                             <List.Item.Meta avatar={<Avatar size='small' shape='square'>{item.title[0]}</Avatar>} title={item.title}/>
                         </List.Item>
