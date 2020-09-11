@@ -1,5 +1,9 @@
 #about {
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     /* padding: 6vw 6vw 2vw 6vw;
     background-color: #FFFFFF; */
+}
+
+#about > h1 {
+    font-size: 32pt;
 }
