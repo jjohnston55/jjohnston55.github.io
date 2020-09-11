@@ -54,25 +54,25 @@ const ProjectDisplay = (props) => {
                 <Card.Meta onClick={handleShow} title={title} description={previewText} />
             </Card>
 
-            <Modal title={title} visible={show} onCancel={handleClose} width='65vw' footer={null}>
+            <Modal title={title} visible={show} onCancel={handleClose} width='50vw' footer={null}>
                 <Row>
-                    <Col lg={12}>
+                    <Col span={8}>
                         <img src={cover} alt='Gif of project' />
                     </Col>
-                    <Col lg={12}>
+                    <Col span={16}>
                         <Row>
-                            <Col lg={12}>
+                            <Col span={12}>
                                 <h1>What It Is</h1>
                                 {/* blurb of what it is and how it works */}
                                 <p>{definition}</p>
                             </Col>
-                            <Col lg={6}>
+                            <Col span={10} offset={2}>
                                 <h1>Tech Used</h1>
                                 <List dataSource={tech} renderItem={item => <List.Item style={{textAlign: 'center'}}>{item}</List.Item>}/>
                             </Col>
                         </Row>
                         <Row>
-                            <Col lg={24}>
+                            <Col span={24}>
                                 <h1>What I Learned</h1>
                                 <p>{learned}</p>
                             </Col>
