@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, Modal, Tooltip, Row, Col } from 'antd';
+import { Card, List, Modal, Tooltip, Row, Col } from 'antd';
 import { CloudFilled, CloudTwoTone, CodeFilled, CodeTwoTone
 } from '@ant-design/icons';
 
@@ -9,6 +9,9 @@ const ProjectDisplay = (props) => {
     const liveLink = props.liveLink;
     const sourceLink = props.sourceLink;
     const previewText = props.previewText;
+    const definition = props.definition;
+    const learned = props.learned;
+    const tech = props.tech;
 
     const [show, setShow]= useState(false);
 
@@ -18,7 +21,7 @@ const ProjectDisplay = (props) => {
     return (
         <>
             <Card hoverable
-                cover={<img onClick={handleShow} alt='cover' height='250vmin' width='250vmin' src={cover}/>} 
+                cover={<img onClick={handleShow} alt={title} height='300vmin' src={cover}/>} 
                 actions={[
                     <>
                     {
@@ -61,14 +64,17 @@ const ProjectDisplay = (props) => {
                             <Col lg={12}>
                                 <h1>What It Is</h1>
                                 {/* blurb of what it is and how it works */}
+                                <p>{definition}</p>
                             </Col>
-                            <Col lg={12}>
+                            <Col lg={6}>
                                 <h1>Tech Used</h1>
+                                <List dataSource={tech} renderItem={item => <List.Item style={{textAlign: 'center'}}>{item}</List.Item>}/>
                             </Col>
                         </Row>
                         <Row>
                             <Col lg={24}>
                                 <h1>What I Learned</h1>
+                                <p>{learned}</p>
                             </Col>
                         </Row>
                     </Col>
