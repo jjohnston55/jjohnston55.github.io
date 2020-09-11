@@ -1,7 +1,11 @@
-#resume {
-    /* padding: 2vw 6vw;
+/* #resume {
+    padding: 2vw 6vw;
     background-color: #EE6352;
-    color: #FFFFFF; */
+    color: #FFFFFF;
+} */
+
+#resume > h1 {
+    font-size: 32pt;
 }
 
 button > a, button > a:hover {

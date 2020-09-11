@@ -7,6 +7,7 @@ import { GithubOutlined,
 	PartitionOutlined
 } from '@ant-design/icons'
 import './index.css';
+import resume from '../../resources/test.pdf';
 
 const Home = (props) => {
 
@@ -14,10 +15,6 @@ const Home = (props) => {
 
 	const handleDown = () => {
 		document.getElementById('content').scrollIntoView({behavior: 'smooth'});
-	}
-	
-	const resumeClick = () => {
-		document.getElementById('resume').scrollIntoView({behavior: 'smooth'});
 	}
 
 	const projectClick = () => {
@@ -27,13 +24,15 @@ const Home = (props) => {
 	return (
 		<>
 			<Row className='jumbotron' justify='center' align='middle'>
-				<Col span={8}>
+				<Col span={6}>
 					<h1>Jeff Johnston</h1>
 					<h3>Full Stack Developer</h3>
 					<Row justify='space-around'>
 						<Col>
 							<Tooltip title='View Resume' placement='bottom'>
-								<Button type='primary' icon={<PaperClipOutlined />} onClick={resumeClick} />
+								<a href={resume} target='_blank' rel='noreferrer noopener'>
+									<Button type='primary' icon={<PaperClipOutlined />} />
+								</a>
 							</Tooltip>
 						</Col>
 						<Col>
@@ -64,7 +63,7 @@ const Home = (props) => {
 						</Col>
 					</Row>
 				</Col>
-				<Col span={8}>
+				<Col span={6}>
 					<svg className='logo' viewBox='0 0 50 50'>
 						<path className='path' d={path} />
 					</svg>
