@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from 'antd';
 import { DownloadOutlined, EyeOutlined } from '@ant-design/icons'
 import './index.css';
-import resume from '../../resources/test.pdf';
+import resume from '../../resources/Jeff Johnston Resume.pdf';
 
 const Resume = () => {
     return (

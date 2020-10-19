@@ -7,7 +7,7 @@ import { GithubOutlined,
 	PartitionOutlined
 } from '@ant-design/icons'
 import './index.css';
-import resume from '../../resources/test.pdf';
+import resume from '../../resources/Jeff Johnston Resume.pdf';
 
 const Home = (props) => {
 
@@ -56,7 +56,7 @@ const Home = (props) => {
 						</Col>
 						<Col>
 							<Tooltip title='jeffjohnst98@gmail.com' placement='bottom'>
-								<a href='mailto:jeffjohnst98@gmail.com'>
+								<a href='mailto:jeffjohnst98@gmail.com?subject=Hi%20Jeff,%20I%20would%20like%20to%20get%20in%20touch!'>
 									<Button type='primary' icon={<MailOutlined />} />
 								</a>
 							</Tooltip>

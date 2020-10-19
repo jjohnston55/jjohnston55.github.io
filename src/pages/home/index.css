@@ -1,5 +1,5 @@
 .ant-row.ant-row-middle.jumbotron {
-	background-image: linear-gradient(320deg, #9fb8ad 0%, #1fc8db 75%, #2cb5e8 90%);
+	background-image: linear-gradient(320deg, #9fb8a3 0%, #1fc8db 75%, #2cb5e8 90%);
 	/* background-image: linear-gradient(320deg, #A3E7FC 0%, #23C9FF 75%); */
 	background-attachment: fixed;
 	height: 100vh;
@@ -10,33 +10,34 @@
 
 .jumbotron h1 {
 	color: #f0f0f0;
-	font-size: 5em;
+	font-size: 4.5rem;
 	text-align: center;
 	margin-bottom: 0px;
 }
 
 .jumbotron h3 {
 	color: #f0f0f0;
-	font-size: 3em;
+	font-size: 2.5rem;
 	text-align: center;
 }
 
 .go-down > svg {
 	position: absolute;
 	top: 88vh;
-	left: 50vmax;
+	left: 50vw;
 	z-index: 1000;
 	width: 4vmax;
 	fill: #0f325a36;
 	stroke: #3f3f3f;
 	stroke-width: 1;
+	transition: 0.25s ease;
 }
 
 .go-down > svg:hover {
 	width: 4.5vmax;
 	top: 87.75vh;
 	left: 49.75vw;
-	transition: 1s ease;
+	transition: 0.25s ease;
 }
 
 path.path {
@@ -50,11 +51,11 @@ path.path {
 @keyframes dash {
 	from {
 		stroke: #33a7f433;
-		stroke-width: 1;
+		stroke-width: 3;
 	}
 	to {
 		stroke: #d8d27b;
-		stroke-width: 2.5;
+		stroke-width: 3;
 		stroke-dashoffset: 0;
 	}
 }

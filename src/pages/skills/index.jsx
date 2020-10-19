@@ -24,10 +24,13 @@ const Skills = () => {
 			title: 'C#',
 		},
 		{
+			title: 'Go',
+		},
+		{
 			title: 'Microsoft SQL Server',
 		},
 	];
-	const techData = [
+	const toolsData = [
         {
             title: 'Docker',
         },
@@ -37,7 +40,7 @@ const Skills = () => {
 	];
 
     return (        
-        <Row justify='space-around'>
+        <Row justify='space-between'>
             <Col>
                 <Card title={<><LaptopOutlined /> <>Front End</></>}>
                     <List className='skill-list' dataSource={frontEndData} renderItem={item => (
@@ -57,8 +60,8 @@ const Skills = () => {
                 </Card>
             </Col>
             <Col>
-                <Card title={<><RocketOutlined /> <>Technologies</></>}>
-                    <List className='skill-list' dataSource={techData} renderItem={item => (
+                <Card title={<><RocketOutlined /> <>Dev Tools</></>}>
+                    <List className='skill-list' dataSource={toolsData} renderItem={item => (
                         <List.Item>
                             <List.Item.Meta avatar={<Avatar size='small' shape='square'>{item.title[0]}</Avatar>} title={item.title}/>
                         </List.Item>
