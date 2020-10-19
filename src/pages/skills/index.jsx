@@ -18,16 +18,16 @@ const Skills = () => {
 	];
 	const backEndData = [
         {
-            title: 'ASP.Net Web API',
-        },
-		{
-			title: 'C#',
+            title: 'C#',
 		},
+        {
+            title: 'DotNet Core',
+        },
 		{
 			title: 'Go',
 		},
 		{
-			title: 'Microsoft SQL Server',
+			title: 'SQL',
 		},
 	];
 	const toolsData = [

@@ -20,10 +20,8 @@ const App = () => {
 			<div id='content' className='content'>
 				<About />
 				<Projects />
-				<Resume />
-				<footer>Jeff Johnston - {date.getFullYear()}
-				{/* <br/>https://coolors.co/ee6352-59cd90-23c9ff-d8d27b-ffffff */}
-				</footer>
+				{/* <Resume /> */}
+				<footer>Jeff Johnston - {date.getFullYear()}</footer>
 			</div>
 		</>
 	);

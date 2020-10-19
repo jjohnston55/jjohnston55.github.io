@@ -73,7 +73,6 @@ const ProjectDisplay = (props) => {
                 <Row className='modalContent'>
                     <Col span={14}>
                         <h1>What It Is</h1>
-                        {/* blurb of what it is and how it works */}
                         <p>{definition}</p>
                     </Col>
                     <Col span={8} offset={2}>

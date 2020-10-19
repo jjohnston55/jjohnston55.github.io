@@ -11,10 +11,8 @@ button.ant-btn:hover {
 }
 
 footer {
-    padding: 2% 4%;
-    /* 
-    background-color: #23C9FF;
+    text-align: center;
+    padding: 4vh 4%;
+    background-color: #3b4449;
     color: #ffffff;
-    font-size: 1.5rem; */
 }
-
