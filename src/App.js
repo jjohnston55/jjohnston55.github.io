@@ -6,7 +6,6 @@ import './App.css';
 import About from './pages/about';
 import Home from './pages/home';
 import Projects from './pages/projects';
-import Resume from './pages/resume';
 
 const App = () => {
 	const date = new Date();
@@ -20,7 +19,6 @@ const App = () => {
 			<div id='content' className='content'>
 				<About />
 				<Projects />
-				{/* <Resume /> */}
 				<footer>Jeff Johnston - {date.getFullYear()}</footer>
 			</div>
 		</>

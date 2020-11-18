@@ -3,9 +3,11 @@ button.ant-btn, button.ant-btn:active, button.ant-btn:focus {
     border: none;
     outline: none;
 }
+
 button.ant-btn:hover {
     background-color: #0f325a99;
 }
+
 .content {
     margin: 0 auto;
 }
