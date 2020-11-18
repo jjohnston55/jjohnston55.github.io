@@ -10,7 +10,7 @@ const About = () => {
                 <h1>My name is Jeff Johnston</h1>
             </Row>
             <Row className='description' justify='center'>
-                <Col span={12}>
+                <Col xs={18} sm={16} md={12}>
                     <span>
                         I am a Software Developer based in Edmonton, Alberta.
                         I am currently in the <a href='https://www.nait.ca/programs/baist-information-systems' target='_blank' rel='noopener noreferrer'>Bachelor of Applied Information Systems Technology</a> program at the 
@@ -20,11 +20,7 @@ const About = () => {
                     </span>
                 </Col>
             </Row>
-            <Row justify='space-around' align='middle'>                
-                <Col>
-                    <Skills />
-                </Col>
-            </Row>
+            <Skills />
         </div>
     )
 }

@@ -1,13 +1,15 @@
 #about {
-    font-size: 1.5rem;
     padding: 4%;
     min-height: 70vh;
 }
 
-#about > h1 {
-    font-size: 2.7rem;
+.title > h1 {
+    font-size: max(125%, 2.7vmax);
+    text-align: center;
 }
 
-#about > .description {
+.description {
+    font-size: max(100%, 1.5vw);
     margin-bottom: 5vh;
+    text-align: center;
 }

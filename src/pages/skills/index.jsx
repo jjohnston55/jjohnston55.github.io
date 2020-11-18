@@ -40,8 +40,8 @@ const Skills = () => {
 	];
 
     return (        
-        <Row justify='space-between'>
-            <Col>
+        <Row gutter={[32, 32]} justify='center'>
+            <Col >
                 <Card title={<><LaptopOutlined /> <>Front End</></>}>
                     <List className='skill-list' dataSource={frontEndData} renderItem={item => (
                         <List.Item>
