@@ -1,4 +1,4 @@
-.ant-row.ant-row-middle.jumbotron {
+.jumbotron {
 	background-image: linear-gradient(320deg, #9fb8a3 0%, #1fc8db 75%, #2cb5e8 90%);
 	/* background-image: linear-gradient(320deg, #A3E7FC 0%, #23C9FF 75%); */
 	background-attachment: fixed;
@@ -8,36 +8,50 @@
 	z-index: 1;
 }
 
+.jumbotron > div {
+	width: 100%;
+}
+
 .jumbotron h1 {
 	color: #f0f0f0;
-	font-size: 4.5rem;
+	font-size: max(200%, 4vw);
 	text-align: center;
 	margin-bottom: 0px;
 }
 
 .jumbotron h3 {
 	color: #f0f0f0;
-	font-size: 2.5rem;
+	font-size: max(100%, 2.5vw);
 	text-align: center;
 }
 
-.go-down > svg {
+.go-down {
 	position: absolute;
 	top: 88vh;
-	left: 50vw;
+	left: calc(50vw - 2vmax);
 	z-index: 1000;
 	width: 4vmax;
-	fill: #0f325a36;
-	stroke: #3f3f3f;
-	stroke-width: 1;
 	transition: 0.25s ease;
 }
 
-.go-down > svg:hover {
+.go-down:hover {
 	width: 4.5vmax;
 	top: 87.75vh;
-	left: 49.75vw;
+	left: calc(49.75vw - 2vmax);
 	transition: 0.25s ease;
+}
+
+.go-down > svg {
+	fill: #0f325a36;
+	stroke: #3f3f3f;
+	stroke-width: 1;
+}
+
+.go-down-mobile {
+	animation-duration: 10s;
+	animation-name: bounce;
+	animation-delay: 4s;
+	animation-iteration-count: infinite;
 }
 
 path.path {
@@ -57,5 +71,43 @@ path.path {
 		stroke: #d8d27b;
 		stroke-width: 3;
 		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes bounce {
+	0% {
+		width: 4vmax;
+		top: 88vh;
+		left: calc(50vw - 2vmax);
+	}
+	5% {
+		width: 4.5vmax;
+		top: 87.75vh;
+		left: calc(49.75vw - 2vmax);
+	}
+	10% {
+		width: 4vmax;
+		top: 88vh;
+		left: calc(50vw - 2vmax);
+	}
+	15% {
+		width: 4.5vmax;
+		top: 87.75vh;
+		left: calc(49.75vw - 2vmax);
+	}
+	20% {
+		width: 4vmax;
+		top: 88vh;
+		left: calc(50vw - 2vmax);
+	}
+	25% {
+		width: 4.5vmax;
+		top: 87.75vh;
+		left: calc(49.75vw - 2vmax);
+	}
+	30% {
+		width: 4vmax;
+		top: 88vh;
+		left: calc(50vw - 2vmax);
 	}
 }

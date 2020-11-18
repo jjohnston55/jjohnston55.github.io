@@ -12,7 +12,7 @@ const About = () => {
             <Row className='description' justify='center'>
                 <Col span={12}>
                     <span>
-                        I am a Full Stack Developer based in Edmonton, Alberta.
+                        I am a Software Developer based in Edmonton, Alberta.
                         I am currently in the <a href='https://www.nait.ca/programs/baist-information-systems' target='_blank' rel='noopener noreferrer'>Bachelor of Applied Information Systems Technology</a> program at the 
                         Northern Alberta Institute of Technology and have a Diploma in <a href='https://www.nait.ca/programs/dmit-computer-software-development' target='_blank' rel='noopener noreferrer'>Digital Media and IT</a> from the same institute.
                         I am passionate about learning new technologies and strive to continue expanding my skillset.
