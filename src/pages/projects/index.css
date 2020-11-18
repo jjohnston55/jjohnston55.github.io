@@ -8,6 +8,10 @@
     font-size: max(125%, 2.7vmax);
 }
 
+.projectList {
+    margin: 0vw 5vw !important;
+}
+
 .projectCard {
     width: min-content;
 }

@@ -60,7 +60,7 @@ const Home = (props) => {
 								</Tooltip>
 							</Col>
 							<Col>
-								<Tooltip title='jeffjohnst98@gmail.com' placement='bottom'>
+								<Tooltip title='Send Email' placement='bottom'>
 									<a href='mailto:jeffjohnst98@gmail.com'>
 										<Button type='primary' icon={<MailOutlined />} />
 									</a>

@@ -16,7 +16,7 @@ const Projects = () => {
             <Row justify='center'>
                 <h1>Projects</h1>
             </Row>
-            <Row gutter={[32, 32]} justify='center'>
+            <Row className='projectList' gutter={[32, 32]} justify='center'>
                 <Col>
                     <ProjectDisplay cover={povertySimLogo}
                         title='Poverty Simulator' 
