@@ -22,8 +22,8 @@ const ProjectDisplay = (props) => {
 
     return (
         <>
-            <Card hoverable bordered={false}
-                cover={<img className='cardCover' onClick={handleShow} alt={title} height='300vmin' src={cover}/>} 
+            <Card className='projectCard' hoverable bordered={false}
+                cover={<img className='cardCover' onClick={handleShow} alt={title} src={cover}/>} 
                 actions={[
                     <>
                     {
@@ -56,7 +56,7 @@ const ProjectDisplay = (props) => {
                 <Card.Meta onClick={handleShow} title={title} description={previewText} />
             </Card>
 
-            <Modal className='projectModal' title={title} visible={show} onCancel={handleClose} width='35vw' footer={null}>
+            <Modal className='projectModal' title={title} visible={show} onCancel={handleClose} footer={null}>
                 <Row justify='center'>
                     { 
                         clip 
@@ -71,17 +71,17 @@ const ProjectDisplay = (props) => {
                     }
                 </Row>
                 <Row className='modalContent'>
-                    <Col span={14}>
+                    <Col xs={24} sm={16} md={14} lg={14} xl={14}>
                         <h1>What It Is</h1>
                         <p>{definition}</p>
                     </Col>
-                    <Col span={8} offset={2}>
+                    <Col md={{span: 8, offset: 2}}>
                         <h1>Tech Used</h1>
                         <List dataSource={tech} renderItem={item => <List.Item style={{textAlign: 'center'}}>{item}</List.Item>}/>
                     </Col>
                 </Row>
                 <Row className='modalContent'>
-                    <Col span={24}>
+                    <Col>
                         <h1>What I Learned</h1>
                         <p>{learned}</p>
                     </Col>

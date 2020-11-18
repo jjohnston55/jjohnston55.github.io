@@ -25,10 +25,7 @@ const Projects = () => {
                             The United Way is able to distribute and licence this software to other chapters of the organization as well as create, update, and delete regions and experiences.'
                         tech={['Azure', 'DotNetCore', 'React' ]}
                         learned='This project got me more familiar with React, and introduced me to creating a WebAPI back-end. 
-                            My contribution to the project was mostly to develop the administrator pages where they will manage the software that the viewer will see as well develop custom API endpoints. 
-                            I developed a Region Dashboard that can edit region information, create sponsors for a region, manage experiences within a region, and upload images to the server. 
-                            At the time, I was the most familiar with React in my team so I would help everyone on the team if they had questions or needed help programming. 
-                            I found that this leadership position allowed me to become more knowledgeable in the subject and become a better developer.'
+                            My contribution to the project was mostly to develop the administrator pages where they will manage the software that the viewer will see as well develop custom API endpoints.'
                         />
                 </Col>
                 <Col>
