@@ -1,32 +1,33 @@
 #projects {
-    padding: 4%;
-    background-color: #545F66;
-    min-height: 50vh;
+	padding: 4%;
+	background-color: #545f66;
+	min-height: 50vh;
 }
-#projects  h1 {
-    color: #FFFFFF;
-    font-size: max(125%, 2.7vmax);
+#projects h1 {
+	color: #ffffff;
+	font-size: max(125%, 2.7vmax);
 }
 
 .projectList {
-    margin: 0vw 5vw !important;
+	margin: 0vw 5vw !important;
 }
 
 .projectCard {
-    width: min-content;
+	width: min-content;
 }
 
 .projectModal {
-    max-width: 80vw;
+	max-width: 80vw;
 }
 
-.cover > video, .cover > img {
-    max-width: 100%;
-    max-height: 300px;
+.cover > video,
+.cover > img {
+	max-width: 100%;
+	max-height: 300px;
 }
 
 img.cardCover {
-    width: auto;
-    height: min(30vw, 300px);
-    min-height: 150px;
+	width: auto;
+	height: min(30vw, 300px);
+	min-height: 150px;
 }
