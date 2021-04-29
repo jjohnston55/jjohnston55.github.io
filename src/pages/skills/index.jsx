@@ -1,10 +1,6 @@
 import React from "react";
 import { Row, Col, Card, List, Avatar } from "antd";
-import {
-	LaptopOutlined,
-	DatabaseOutlined,
-	RocketOutlined,
-} from "@ant-design/icons";
+import { LaptopOutlined, DatabaseOutlined, RocketOutlined } from "@ant-design/icons";
 import "./index.css";
 
 const Skills = () => {
@@ -28,6 +24,9 @@ const Skills = () => {
 		},
 		{
 			title: "Go",
+		},
+		{
+			title: "NextJS",
 		},
 		{
 			title: "SQL",

@@ -8,6 +8,7 @@ import {
 	NHL_STATS,
 	GAME_OF_LIFE,
 	GO_GENERATIVE_ART,
+	GREASY_CREW,
 } from "../../util/projects";
 import povertySimLogo from "../../resources/poverty_sim.png";
 import nhlLogo from "../../resources/nhl_stats.png";
@@ -15,6 +16,7 @@ import chatroomLogo from "../../resources/chatroom.png";
 import chatroomClip from "../../resources/chatroom.webm";
 import gameOfLifeLogo from "../../resources/game_of_life.png";
 import goGenerativeArtLogo from "../../resources/go_generative_art.png";
+import greasyLogo from "../../resources/greasy_crew.png";
 
 const Projects = () => {
 	return (
@@ -23,6 +25,20 @@ const Projects = () => {
 				<h1>Projects</h1>
 			</Row>
 			<Row className="projectList" gutter={[32, 32]} justify="center">
+				<Col>
+					<ProjectDisplay
+						cover={greasyLogo}
+						liveLink={GREASY_CREW.LIVE}
+						title="Greasy Crew"
+						previewText="An e-commerce site for a local paintball apparel company."
+						definition="The Greasy Crew is a local paintball apparel business who creates notable and unique designs for their products. 
+							In a group of three, they requested us to build a website with the ability to perform their current business needs in one location. 
+							This includes: managing and selling products online, fulfilling orders, managing blog posts, as well as receiving and reselling refurbished gear."
+						tech={["Firebase", "NextJS"]}
+						learned="This project introduced me to NextJS and Firebase. I managed the Firebase database and authentication for this website and set up the appropriate security rules for accessing and manipulating information.
+							In a group of three, I was responsible for creating the contact, login, and product customer facing pages as well as the dashboard, company information, order, and pawn shop pages in the website backend."
+					/>
+				</Col>
 				<Col>
 					<ProjectDisplay
 						cover={povertySimLogo}

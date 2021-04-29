@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import { Card, List, Modal, Tooltip, Row, Col } from "antd";
-import {
-	CloudFilled,
-	CloudTwoTone,
-	CodeFilled,
-	CodeTwoTone,
-} from "@ant-design/icons";
+import { CloudFilled, CloudTwoTone, CodeFilled, CodeTwoTone } from "@ant-design/icons";
 import "./index.css";
 
 const ProjectDisplay = ({
@@ -30,67 +25,36 @@ const ProjectDisplay = ({
 				className="projectCard"
 				hoverable
 				bordered={false}
-				cover={
-					<img
-						className="cardCover"
-						onClick={handleShow}
-						alt={title}
-						src={cover}
-					/>
-				}
+				cover={<img className="cardCover" onClick={handleShow} alt={title} src={cover} />}
 				actions={[
 					<>
 						{liveLink ? (
-							<Tooltip
-								title="View Live Version"
-								placement="bottom">
-								<a
-									href={liveLink}
-									target="_blank"
-									rel="noopener noreferrer">
-									<CloudTwoTone
-										twoToneColor="#33a7f4"
-										key="live"
-									/>
+							<Tooltip title="View Live Version" placement="bottom">
+								<a href={liveLink} target="_blank" rel="noopener noreferrer">
+									<CloudTwoTone twoToneColor="#33a7f4" key="live" />
 								</a>
 							</Tooltip>
 						) : (
-							<Tooltip
-								title="No Live Version Available"
-								placement="bottom">
+							<Tooltip title="No Live Version Available" placement="bottom">
 								<CloudFilled key="notLive" />
 							</Tooltip>
 						)}
 					</>,
 					<>
 						{sourceLink ? (
-							<Tooltip
-								title="View Source Code"
-								placement="bottom">
-								<a
-									href={sourceLink}
-									target="_blank"
-									rel="noopener noreferrer">
-									<CodeTwoTone
-										twoToneColor="#33a7f4"
-										key="code"
-									/>
+							<Tooltip title="View Source Code" placement="bottom">
+								<a href={sourceLink} target="_blank" rel="noopener noreferrer">
+									<CodeTwoTone twoToneColor="#33a7f4" key="code" />
 								</a>
 							</Tooltip>
 						) : (
-							<Tooltip
-								title="Source Code Is Private"
-								placement="bottom">
+							<Tooltip title="Source Code Is Private" placement="bottom">
 								<CodeFilled key="noSourceCode" />
 							</Tooltip>
 						)}
 					</>,
 				]}>
-				<Card.Meta
-					onClick={handleShow}
-					title={title}
-					description={previewText}
-				/>
+				<Card.Meta onClick={handleShow} title={title} description={previewText} />
 			</Card>
 
 			<Modal
@@ -102,7 +66,7 @@ const ProjectDisplay = ({
 				<Row justify="center">
 					{clip ? (
 						<Col className="cover">
-							<video poster={cover} controls loop preload>
+							<video poster={cover} controls loop preload="true">
 								<source src={clip} type="video/webm" />
 							</video>
 						</Col>
@@ -122,9 +86,7 @@ const ProjectDisplay = ({
 						<List
 							dataSource={tech}
 							renderItem={(item) => (
-								<List.Item style={{ textAlign: "center" }}>
-									{item}
-								</List.Item>
+								<List.Item style={{ textAlign: "center" }}>{item}</List.Item>
 							)}
 						/>
 					</Col>

@@ -12,3 +12,6 @@ export const GAME_OF_LIFE = {
 export const GO_GENERATIVE_ART = {
 	CODE: "https://github.com/jjohnston55/Go-Generative-Art",
 };
+export const GREASY_CREW = {
+	LIVE: "https://greasycrew.com/",
+};
