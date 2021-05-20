@@ -1,31 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.ac5bd91b.chunk.css",
-    "main.js": "/static/js/main.a7a8e80e.chunk.js",
-    "main.js.map": "/static/js/main.a7a8e80e.chunk.js.map",
+    "main.css": "/static/css/main.c6bed91b.chunk.css",
+    "main.js": "/static/js/main.7da5d98a.chunk.js",
+    "main.js.map": "/static/js/main.7da5d98a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1a2c858e.js",
     "runtime-main.js.map": "/static/js/runtime-main.1a2c858e.js.map",
-    "static/css/2.21faa3a9.chunk.css": "/static/css/2.21faa3a9.chunk.css",
-    "static/js/2.b726abe4.chunk.js": "/static/js/2.b726abe4.chunk.js",
-    "static/js/2.b726abe4.chunk.js.map": "/static/js/2.b726abe4.chunk.js.map",
+    "static/css/2.00bb4513.chunk.css": "/static/css/2.00bb4513.chunk.css",
+    "static/js/2.01ceab31.chunk.js": "/static/js/2.01ceab31.chunk.js",
+    "static/js/2.01ceab31.chunk.js.map": "/static/js/2.01ceab31.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/2.21faa3a9.chunk.css.map": "/static/css/2.21faa3a9.chunk.css.map",
-    "static/css/main.ac5bd91b.chunk.css.map": "/static/css/main.ac5bd91b.chunk.css.map",
-    "static/js/2.b726abe4.chunk.js.LICENSE.txt": "/static/js/2.b726abe4.chunk.js.LICENSE.txt",
-    "static/media/Jeff Johnston Resume.fcd7e4f8.pdf": "/static/media/Jeff Johnston Resume.fcd7e4f8.pdf",
+    "static/css/2.00bb4513.chunk.css.map": "/static/css/2.00bb4513.chunk.css.map",
+    "static/css/main.c6bed91b.chunk.css.map": "/static/css/main.c6bed91b.chunk.css.map",
+    "static/js/2.01ceab31.chunk.js.LICENSE.txt": "/static/js/2.01ceab31.chunk.js.LICENSE.txt",
+    "static/media/Jeff Johnston Resume.038bfc84.pdf": "/static/media/Jeff Johnston Resume.038bfc84.pdf",
     "static/media/chatroom.837d171b.webm": "/static/media/chatroom.837d171b.webm",
     "static/media/chatroom.b5d43541.png": "/static/media/chatroom.b5d43541.png",
     "static/media/game_of_life.cd65d3b7.png": "/static/media/game_of_life.cd65d3b7.png",
     "static/media/go_generative_art.ce4619c3.png": "/static/media/go_generative_art.ce4619c3.png",
     "static/media/greasy_crew.572a9b3a.png": "/static/media/greasy_crew.572a9b3a.png",
     "static/media/nhl_stats.b9220112.png": "/static/media/nhl_stats.b9220112.png",
-    "static/media/poverty_sim.8506c646.png": "/static/media/poverty_sim.8506c646.png"
+    "static/media/poverty_sim.8506c646.png": "/static/media/poverty_sim.8506c646.png",
+    "static/media/property_assessment.e6224352.png": "/static/media/property_assessment.e6224352.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1a2c858e.js",
-    "static/css/2.21faa3a9.chunk.css",
-    "static/js/2.b726abe4.chunk.js",
-    "static/css/main.ac5bd91b.chunk.css",
-    "static/js/main.a7a8e80e.chunk.js"
+    "static/css/2.00bb4513.chunk.css",
+    "static/js/2.01ceab31.chunk.js",
+    "static/css/main.c6bed91b.chunk.css",
+    "static/js/main.7da5d98a.chunk.js"
   ]
 }
