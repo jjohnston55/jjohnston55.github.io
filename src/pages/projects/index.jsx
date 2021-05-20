@@ -9,8 +9,10 @@ import {
 	GAME_OF_LIFE,
 	GO_GENERATIVE_ART,
 	GREASY_CREW,
+	PROPERTY_ASSESSMENT,
 } from "../../util/projects";
 import povertySimLogo from "../../resources/poverty_sim.png";
+import propertyAssessmentLogo from "../../resources/property_assessment.png";
 import nhlLogo from "../../resources/nhl_stats.png";
 import chatroomLogo from "../../resources/chatroom.png";
 import chatroomClip from "../../resources/chatroom.webm";
@@ -41,14 +43,16 @@ const Projects = () => {
 				</Col>
 				<Col>
 					<ProjectDisplay
-						cover={povertySimLogo}
-						title="Poverty Simulator"
-						previewText="A content management system designed for the United Way."
-						definition='The Poverty Simulator is an online content management system developed for the United Way as a way to teach the community about poverty through a "Choose Your Own Adventure" style online game. 
-                            The United Way is able to distribute and licence this software to other chapters of the organization as well as create, update, and delete regions and experiences.'
-						tech={["Azure", "DotNetCore", "React"]}
-						learned="This project got me more familiar with React, and introduced me to creating a WebAPI back-end. 
-                            My contribution to the project was mostly to develop the administrator pages where they will manage the software that the viewer will see as well develop custom API endpoints."
+						cover={propertyAssessmentLogo}
+						liveLink={PROPERTY_ASSESSMENT.LIVE}
+						sourceLink={PROPERTY_ASSESSMENT.CODE}
+						title="Property Assessment"
+						previewText="A single page application for viewing assessed value of Edmonton properties"
+						definition="Using Edmonton's open data API, this web app allows users to search for a property by address and neighbourhood to see its assessed property value. 
+							(Note: The City of Edmonton does not guarantee the accuracy of this data)"
+						tech={["Public APIs", "React", "TypeScript"]}
+						learned="Creating this project introduced me to Typescript. It allowed me to develop much quicker and more effective than Javascript. 
+							For example, I created an interface to match the schema of the API data which caused me to notice a spelling mistake immediately instead of potential hours."
 					/>
 				</Col>
 				<Col>
@@ -60,6 +64,18 @@ const Projects = () => {
 						definition="Uses golang to manipulates a photo to appear more pixelated. I started this project to familiarize myself more with the language and to create a fun side project."
 						tech={["Go"]}
 						learned="This project got me more familiar with Go and provided me experience with creating a command line tool."
+					/>
+				</Col>
+				<Col>
+					<ProjectDisplay
+						cover={povertySimLogo}
+						title="Poverty Simulator"
+						previewText="A content management system designed for the United Way."
+						definition='The Poverty Simulator is an online content management system developed for the United Way as a way to teach the community about poverty through a "Choose Your Own Adventure" style online game. 
+                            The United Way is able to distribute and licence this software to other chapters of the organization as well as create, update, and delete regions and experiences.'
+						tech={["Azure", "DotNetCore", "React"]}
+						learned="This project got me more familiar with React, and introduced me to creating a WebAPI back-end. 
+                            My contribution to the project was mostly to develop the administrator pages where they will manage the software that the viewer will see as well develop custom API endpoints."
 					/>
 				</Col>
 				<Col>

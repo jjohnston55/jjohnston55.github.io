@@ -14,6 +14,9 @@ const Skills = () => {
 		{
 			title: "React | Redux",
 		},
+		{
+			title: "Typescript",
+		},
 	];
 	const backEndData = [
 		{
@@ -35,6 +38,9 @@ const Skills = () => {
 	const toolsData = [
 		{
 			title: "Docker",
+		},
+		{
+			title: "Firebase",
 		},
 		{
 			title: "Git",

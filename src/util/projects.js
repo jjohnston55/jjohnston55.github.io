@@ -9,6 +9,10 @@ export const GAME_OF_LIFE = {
 	CODE: "https://github.com/jjohnston55/GameOfLife",
 	LIVE: "https://jeffjohnston.dev/GameOfLife/",
 };
+export const PROPERTY_ASSESSMENT = {
+	CODE: "https://github.com/jjohnston55/EdmontonPropertyAssessment",
+	LIVE: "https://jeffjohnston.dev/EdmontonPropertyAssessment/",
+};
 export const GO_GENERATIVE_ART = {
 	CODE: "https://github.com/jjohnston55/Go-Generative-Art",
 };
