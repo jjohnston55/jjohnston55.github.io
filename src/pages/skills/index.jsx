@@ -51,6 +51,7 @@ const Skills = () => {
 		<Row gutter={[32, 32]} justify="center">
 			<Col>
 				<Card
+					className="card"
 					title={
 						<>
 							<LaptopOutlined /> <>Front End</>
@@ -76,6 +77,7 @@ const Skills = () => {
 			</Col>
 			<Col>
 				<Card
+					className="card"
 					title={
 						<>
 							<DatabaseOutlined /> <>Back End</>
@@ -101,6 +103,7 @@ const Skills = () => {
 			</Col>
 			<Col>
 				<Card
+					className="card"
 					title={
 						<>
 							<RocketOutlined /> <>Dev Tools</>

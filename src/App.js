@@ -13,9 +13,7 @@ const App = () => {
 	return (
 		<>
 			<div className="banner">
-				<BackTop
-					visibilityHeight={document.documentElement.clientHeight - 1}
-				/>
+				<BackTop visibilityHeight={0} />
 				<Home />
 			</div>
 			<div id="content" className="content">

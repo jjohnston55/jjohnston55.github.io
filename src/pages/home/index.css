@@ -1,11 +1,25 @@
 .jumbotron {
-	background-image: linear-gradient(320deg, #9fb8a3 0%, #1fc8db 75%, #2cb5e8 90%);
-	/* background-image: linear-gradient(320deg, #A3E7FC 0%, #23C9FF 75%); */
+	background-image: linear-gradient(-45deg, #c27264 20%, #2c68e8 50%, #1fc8db 80%);
 	background-attachment: fixed;
 	height: 100vh;
 	outline: white solid 1vw;
 	outline-offset: -3vw;
-	z-index: 1;
+	z-index: 2;
+	box-shadow: 0 0 1rem 5px rgba(0, 0, 0, 0.2);
+	animation: gradient 10s ease infinite;
+	background-size: 500% 500%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .jumbotron > div {
