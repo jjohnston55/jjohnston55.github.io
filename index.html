@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Web Portfolio for Software Developer, Jeff Johnston" />
+    <link rel="icon" sizes="48x48" href="res/favicon.ico" />
+    <link rel="apple-touch-icon" href="res/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="res/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="res/favicon-16x16.png">
+    <link rel="manifest" href="res/manifest.json" />
+	<title>Jeff Johnston - Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <!-- Title -->
+	<section class="section">
+        <div class="container columns is-mobile is-centered">
+            <div class="column is-narrow columns is-vcentered is-centered is-max-tablet">
+                <div class="column is-narrow is-flex is-justify-content-center">
+                    <figure class="image profile-pic">
+                        <img src="res/jeffj.jpg" alt="Jeff Johnston" />
+                    </figure>
+                </div>
+                <div class="column">
+                    <p class="title is-1 has-text-centered-mobile">Jeff Johnston</p>
+                    <p class="subtitle is-3 has-text-centered-mobile">Software Developer</p>
+                </div>
+            </div>
+        </div>
+	</section>
+    <!-- Links -->
+    <section class="section container is-centered">
+        <h2 class="title has-text-centered">Connect with Me</h2>
+        <div class="container is-centered is-max-tablet buttons">
+            <a href="res/PortfolioResume.pdf" class="button is-link has-text-centered" target="_blank" rel="noopener noreferrer">
+                <span class="icon">
+                    <i data-feather="paperclip"></i>
+                </span>
+                <span>View Resume</span>
+            </a>
+            <a href="https://www.linkedin.com/in/jeff-johnston-software-developer/" class="button is-link has-text-centered" target="_blank" rel="noopener noreferrer">
+                <span class="icon">
+                    <i data-feather="linkedin"></i>
+                </span>
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/jjohnston55/" class="button is-link has-text-centered" target="_blank" rel="noopener noreferrer">
+                <span class="icon">
+                    <i data-feather="github"></i>
+                </span>
+                <span>GitHub</span>
+            </a>
+            <a href="mailto:jeffjohnst98@gmail.com" class="button is-link has-text-centered">
+                <span class="icon">
+                    <i data-feather="at-sign"></i>
+                </span>
+                <span>Get in Touch</span>
+            </a>
+        </div>
+    </section>
+    <!-- About me -->
+    <section class="section container">
+        <h2 class="title has-text-centered">About Me</h2>
+        <p class="subtitle has-text-centered">
+            I'm Jeff Johnston, a software developer based in Edmonton, Alberta, with a Bachelor of Applied Information Systems Technology from NAIT.
+            I specialize in building scalable web applications and solving complex technical challenges.
+            I'm passionate about continuous learning and thrive in collaborative environments that value clean code, innovation, and growth.
+        </p>
+    </section>
+    <!-- Projects -->
+    <section class="section container">
+        <h2 class="title has-text-centered">Projects</h2>
+        <div class="columns is-multiline">
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image">
+                            <img src="res/property_assessment.png" alt="Edmonton Property Assessment" width="1100" height="600">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title is-4">Edmonton Property Assessment</p>
+                        <p>A web application for viewing assessed property values in Edmonton.</p>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="https://jeffjohnston.dev/EdmontonPropertyAssessment" target="_blank" class="card-footer-item">View Project</a>
+                    </footer>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image">
+                            <img src="res/game_of_life.png" alt="Game of Life" width="1100" height="600">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title is-4">Conway's Game of Life</p>
+                        <p>A rendering of Conway's Game of Life with React.</p>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="https://jeffjohnston.dev/GameOfLife" target="_blank" class="card-footer-item">View Project</a>
+                    </footer>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image">
+                            <img src="res/go_generative_art.png" alt="Go Pixelizer" width="1100" height="600">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title is-4">Go Image Pixelizer</p>
+                        <p>A command line tool to pixelate images.</p>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="https://github.com/jjohnston55/Go-Image-Pixelizer" target="_blank" class="card-footer-item">View Project</a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <div class="level-item has-text-centered">
+            <a href="https://github.com/jjohnston55/" class="button is-link" target="_blank" rel="noopener noreferrer">View more</a>
+        </div>
+    </section>
+    <!-- Footer --> 
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Jeff Johnston</strong> - <script>document.write(new Date().getFullYear())</script>
+            </p>
+        </div>
+    </footer>
+    <script>
+      feather.replace();
+    </script>
+</body>
+</html>
